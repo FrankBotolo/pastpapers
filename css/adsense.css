@@ -1,0 +1,15 @@
+/* AdSense live units — remove placeholder styling */
+.ad-zone {
+  background: transparent;
+  border: none;
+  min-height: auto;
+  color: inherit;
+  font-size: inherit;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 0;
+}
+
+.ad-zone ins {
+  display: block;
+}
