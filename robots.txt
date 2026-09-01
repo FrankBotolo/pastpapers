@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://malawipastpapers.com/sitemap.xml
+
+# Block admin/private paths (when using WordPress)
+Disallow: /wp-admin/
+Disallow: /wp-includes/

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and download free past papers from Malawi, Kenya and Uganda. Filter by university, subject, year and exam level.">
+  <link rel="canonical" href="https://malawipastpapers.com/papers/">
+  <title>Browse Past Papers — MalawiPastPapers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">📄</div>
+        Past<span>Papers</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="index.html" class="active">Browse Papers</a>
+        <a href="../blog/index.html">Study Guides</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" aria-label="Mobile navigation">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Browse Papers</a>
+      <a href="../blog/index.html">Study Guides</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span>Browse Papers</span>
+        </nav>
+        <h1>Browse Past Papers</h1>
+        <p>Filter by country, university, subject, or year to find exactly what you need.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container page-layout">
+        <div class="main-content">
+          <!-- Search -->
+          <form data-search-form role="search" class="mb-3">
+            <input type="search" name="q" data-search-input placeholder="Search papers..." style="width:100%;padding:0.875rem 1.25rem;border:1px solid var(--border);border-radius:var(--radius-md);font-family:var(--font);font-size:1rem;">
+          </form>
+
+          <!-- Filters -->
+          <div class="filters">
+            <select class="filter-select" data-filter="university" aria-label="Filter by university">
+              <option value="">All Universities</option>
+              <option value="chancellor">Chancellor College</option>
+              <option value="mzuzu">Mzuzu University</option>
+              <option value="luanar">LUANAR</option>
+              <option value="uon">University of Nairobi</option>
+              <option value="makerere">Makerere University</option>
+            </select>
+            <select class="filter-select" data-filter="subject" aria-label="Filter by subject">
+              <option value="">All Subjects</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="chemistry">Chemistry</option>
+              <option value="physics">Physics</option>
+              <option value="biology">Biology</option>
+              <option value="english">English</option>
+              <option value="law">Law</option>
+              <option value="engineering">Engineering</option>
+            </select>
+            <select class="filter-select" data-filter="year" aria-label="Filter by year">
+              <option value="">All Years</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+
+          <p data-results-count class="mb-2" style="font-size:0.875rem;color:var(--text-muted);"></p>
+
+          <!-- Ad between filters and results -->
+          <p class="ad-label">Advertisement</p>
+          <div class="ad-zone ad-zone-leaderboard ad-zone-desktop">Ad Space — 728×90</div>
+          <div class="ad-zone ad-zone-mobile">Ad Space — 320×100</div>
+
+          <!-- Paper List -->
+          <div class="gap-list" id="paper-list">
+            <a href="download.html?id=msce-chem-2023" class="paper-item" data-paper data-university="chancellor" data-subject="chemistry" data-year="2023">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>MSCE Chemistry Paper 1 — November 2023</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Malawi</span>
+                  <span class="paper-tag">MSCE</span>
+                  <span class="paper-tag">Chemistry</span>
+                  <span class="paper-tag">2023</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=msce-math-2023" class="paper-item" data-paper data-university="chancellor" data-subject="mathematics" data-year="2023">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>MSCE Mathematics Paper 2 — November 2023</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Malawi</span>
+                  <span class="paper-tag">MSCE</span>
+                  <span class="paper-tag">Mathematics</span>
+                  <span class="paper-tag">2023</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=msce-phy-2022" class="paper-item" data-paper data-university="chancellor" data-subject="physics" data-year="2022">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>MSCE Physics Paper 1 — November 2022</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Malawi</span>
+                  <span class="paper-tag">MSCE</span>
+                  <span class="paper-tag">Physics</span>
+                  <span class="paper-tag">2022</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=chanco-law-2022" class="paper-item" data-paper data-university="chancellor" data-subject="law" data-year="2022">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>Chancellor College — Constitutional Law Final Exam 2022</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Malawi</span>
+                  <span class="paper-tag">University</span>
+                  <span class="paper-tag">Law</span>
+                  <span class="paper-tag">2022</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=mzuzu-it-2023" class="paper-item" data-paper data-university="mzuzu" data-subject="engineering" data-year="2023">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>Mzuzu University — Information Technology Y3 2023</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Malawi</span>
+                  <span class="paper-tag">University</span>
+                  <span class="paper-tag">IT</span>
+                  <span class="paper-tag">2023</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=kcse-math-2022" class="paper-item" data-paper data-university="uon" data-subject="mathematics" data-year="2022">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>KCSE Mathematics Paper 2 — 2022</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Kenya</span>
+                  <span class="paper-tag">KCSE</span>
+                  <span class="paper-tag">Mathematics</span>
+                  <span class="paper-tag">2022</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=kcse-bio-2023" class="paper-item" data-paper data-university="uon" data-subject="biology" data-year="2023">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>KCSE Biology Paper 1 — 2023</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Kenya</span>
+                  <span class="paper-tag">KCSE</span>
+                  <span class="paper-tag">Biology</span>
+                  <span class="paper-tag">2023</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=uace-phy-2023" class="paper-item" data-paper data-university="makerere" data-subject="physics" data-year="2023">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>UACE Physics Paper 3 — 2023</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Uganda</span>
+                  <span class="paper-tag">UACE</span>
+                  <span class="paper-tag">Physics</span>
+                  <span class="paper-tag">2023</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=makerere-med-2022" class="paper-item" data-paper data-university="makerere" data-subject="biology" data-year="2022">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>Makerere University — Human Anatomy Y2 2022</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Uganda</span>
+                  <span class="paper-tag">University</span>
+                  <span class="paper-tag">Medicine</span>
+                  <span class="paper-tag">2022</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+
+            <a href="download.html?id=msce-eng-2021" class="paper-item" data-paper data-university="chancellor" data-subject="english" data-year="2021">
+              <div class="paper-icon">📄</div>
+              <div class="paper-info">
+                <h4>MSCE English Language Paper 1 — 2021</h4>
+                <div class="paper-meta">
+                  <span class="paper-tag blue">Malawi</span>
+                  <span class="paper-tag">MSCE</span>
+                  <span class="paper-tag">English</span>
+                  <span class="paper-tag">2021</span>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary">Download</span>
+            </a>
+          </div>
+
+          <div data-no-results hidden class="text-center mt-4">
+            <p>No papers found matching your search. Try different filters or <a href="../contact.html">request a paper</a>.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4>Quick Links</h4>
+            <ul class="sidebar-links">
+              <li><a href="index.html?country=malawi">🇲🇼 Malawi Papers</a></li>
+              <li><a href="index.html?country=kenya">🇰🇪 Kenya Papers</a></li>
+              <li><a href="index.html?country=uganda">🇺🇬 Uganda Papers</a></li>
+              <li><a href="index.html?level=msce">MSCE Papers</a></li>
+              <li><a href="index.html?level=kcse">KCSE Papers</a></li>
+              <li><a href="index.html?level=uace">UACE Papers</a></li>
+            </ul>
+          </div>
+
+          <p class="ad-label">Advertisement</p>
+          <div class="ad-zone ad-zone-rectangle">Ad Space — 300×250</div>
+
+          <div class="sidebar-widget mt-3">
+            <h4>Submit a Paper</h4>
+            <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1rem;">Have past papers to share? Help fellow students.</p>
+            <a href="../contact.html" class="btn btn-sm btn-secondary" style="width:100%;">Submit Paper</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding:0;">
+        <span>&copy; 2024 MalawiPastPapers.com</span>
+        <span><a href="../privacy-policy.html">Privacy</a> · <a href="../terms-of-service.html">Terms</a> · <a href="../contact.html">Contact</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
